@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     is_delivery_partner = models.BooleanField(default=False)
-    phone_number = models.CharField(max_length=15, unique=True,db_index=True)
+    phone_number = models.CharField(max_length=15, unique=True,db_index=True,default='1234567890')
     profile_image = models.ImageField(upload_to='profile/')
 
     def __str__(self):
