@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+env/
+myenv/
+
+# Compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Database file
+db.sqlite3
+
+# Django secret key
+.env
+
+# Migrations
+*.log
+*.pot
+*.pyc
+*.swp
+.DS_Store
+
+# Static and media files
+staticfiles/
+media/
